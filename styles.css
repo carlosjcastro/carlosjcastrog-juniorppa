@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     /* background: linear-gradient(90deg, hsla(182, 64%, 53%, 1) 0%, hsla(198, 81%, 43%, 1) 50%, hsla(219, 100%, 47%, 1) 100%); */
-    background-color: #613dc1;
+    background-color: #000814;
 }
 
 body::after{
@@ -160,7 +160,7 @@ nav a:hover::before{
 
 .content h1, .content h2{
     font-weight: 950;
-    font-size: clamp(65px, 6vw, 100px);
+    font-size: clamp(50px, 6vw, 60px);
     color: #ffffff;
     text-transform: uppercase;
     line-height: 0.2;
@@ -290,5 +290,13 @@ img{
         flex-wrap: wrap-reverse;
         gap: 2em;
         padding: 2em 0;
+    }
+
+    .content h1, .content h2{
+        font-weight: 950;
+        font-size: clamp(45px, 6vw,2px);
+        color: #ffffff;
+        text-transform: uppercase;
+        line-height: 0.5;
     }
 }
