@@ -12,17 +12,6 @@ body{
     background-color: #000814;
 }
 
-body::after{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    content: "";
-    background-image: url(./space1.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    min-width: 300px;
-    height: 100%;
-}
 
 img{
     max-width: 100%;
@@ -275,8 +264,6 @@ img{
     transform: scaleX(0);
 }
 
-
-
 /* SECCIÓN INFO */
 .info{
     height: 60em;
@@ -298,8 +285,7 @@ img{
 }
 
 .left-section p{
-    color: #fb8500;
-
+    color: #ffffff;
 }
 
 .left-section h5{
@@ -313,9 +299,8 @@ img{
 .left-section span{
     font-weight: bold;
     color:#73fbd3;
+    text-decoration: 6px underline;
 }
-
-
 
 .btn-search{
     background: none;
@@ -330,7 +315,6 @@ img{
     text-align: center;
     transition: color 0.2s linear;
     display: inline-block;
-
 }
 
 .btn-search:hover{
@@ -342,7 +326,6 @@ img{
 .right-section{
     width: 50%;
     height: 100vh;
-    flex-wrap: nowrap;
 }
 
 #cines{
