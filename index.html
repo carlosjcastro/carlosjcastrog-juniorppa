@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="TUCINEMA+CJCG.ico">
     <script src="/menu.js"></script>
+    <script src="/scroll.js"></script>
     <title>TUCINEMA+ | CJCG </title>
 </head>
 <body>
@@ -34,11 +35,12 @@
           <h3>CERCA TUYO<span class="dot">.</span></h2></h3>
           <span class="carlosjcastrog">By Carlos José Castro Galante | CJCG | Charlescito.</span>
           <p>Inicia buscando el cine aquí </p>
-          <div class="start">
-            <button class="btndark btnnormal">
-              EMPEZAR
-          </button>
-          </div>
+
+            <a href="#cines" class="btndark btnnormal">EMPEZAR</a>
+              
+              
+          
+
         </div>
         <div class="img">
           <img src="cinema2.png" alt="Carlos José Castro Galante">
@@ -47,9 +49,18 @@
       </section>
     
 <!-- CINES -->
-<section id="#cines" class="info">
-    <h5>¿QUÉ VAS A ENCONTRAR?</h5>
-   
+<section id="cines" class="info">
+   <div class="left-section">
+    <h5>Buscá los cines en <span class="argentina">Argentina</span>.</h5>
+    <p>¡Buscá en Argentina todos los cines disponibles y a tu alcance!</p>
+    <a href="" class="btn-search">BUSCAR</a>
+
+    
+   </div>
+  
+   <div class="right-section">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d19232773.033387687!2d-63.12319393003879!3d-40.261177448062405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scine%20argentina!5e0!3m2!1ses-419!2sar!4v1666641804069!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
 </section>
 </body>
 </html>
