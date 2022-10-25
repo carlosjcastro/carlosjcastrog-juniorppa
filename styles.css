@@ -8,10 +8,9 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    /* background: linear-gradient(90deg, hsla(182, 64%, 53%, 1) 0%, hsla(198, 81%, 43%, 1) 50%, hsla(219, 100%, 47%, 1) 100%); */
+    background: linear-gradient(90deg, hsla(216, 100%, 4%, 1) 0%, hsla(256, 41%, 47%, 1) 80%);
     background-color: #000814;
 }
-
 
 img{
     max-width: 100%;
@@ -29,12 +28,12 @@ ul{
     margin: 0;
 }
 
-.container{
+.container2{
     max-width: 90%;
     margin: 0 auto;
 }
 
-.row{
+.row2{
     display: flex;
 }
 
@@ -54,9 +53,10 @@ header a{
     font-size: 24px;
     color: #ffffff;
     transition: 0.2s ease-in-out;
+    text-decoration: none;
 }
 
-.navigation{
+.navigation2{
     flex-grow: 1;
     align-items: center;
 }
@@ -64,8 +64,6 @@ header a{
 .primary-list{
     margin: -10px auto;
 }
-
-
 
 /* .sayhi{
     border-radius: 35px;
@@ -75,6 +73,10 @@ header a{
 
 .primary-list a{
     color: #ffffff;
+}
+
+.primary-list a:hover{
+    color: #fb8500;
 }
 
 .primary-list a::before{
@@ -88,7 +90,6 @@ header a{
     background-repeat: no-repeat;
     background-size: auto;
     transform: scale(1,0);
-
     transition: transform 0.3s ease-in-out;
     -webkit-transition: transform 0.3s ease-in-out;
     -moz-transition: transform 0.3s ease-in-out;
@@ -97,6 +98,9 @@ header a{
 }
 
 nav a:hover::before{
+    color: #d62828;
+    text-decoration: none;
+    text-decoration: none;
     transform: scale(1,1) rotate(0);
     -webkit-transform: scale(1,1) rotate(0);
     -moz-transform: scale(1,1) rotate(0);
@@ -114,6 +118,7 @@ nav a:hover::before{
 }
 
 .secondary-list{
+    text-decoration: none;
     justify-content: center;
     text-align: center;
     padding: 0;
@@ -121,6 +126,7 @@ nav a:hover::before{
 }
 
 .secondary-list p{
+    text-decoration: none;
     color: #80ffdb;
     font-weight: bold;
     font-size: 25px;
@@ -142,7 +148,7 @@ nav a:hover::before{
     z-index: 2;
 }
 
-.container .logo{
+.container2 .logo{
     font-weight: bold;
     font-size: 40px;
     color: #80ffdb;
@@ -156,8 +162,9 @@ nav a:hover::before{
     font-weight: 950;
     font-size: clamp(50px, 6vw, 60px);
     text-transform: uppercase;
-    line-height: 0.1;
+    line-height: 0.9;
 }
+
 .tucinemaplus{
     font-size: 90px;
     color: #6247aa;
@@ -191,11 +198,13 @@ nav a:hover::before{
     padding: 20px;
     border-radius: 20px;
     background-color: #73fbd3;
+    text-decoration: none;
 }
 
 .content a:hover{
     background-color: #54c5a3;
     transform: translateY(0.5,0.5);
+
 }
 
 .content i{
@@ -266,7 +275,7 @@ img{
 
 /* SECCIÓN INFO */
 .info{
-    height: 60em;
+    height: 40em;
     background-color: #54c5a3;
     display: flex;
 }
@@ -338,6 +347,41 @@ img{
 }
 
 
+/* CARDS */
+.cards{
+
+    padding-top: 5em;
+    text-align: center;
+    height: 85vh;
+    background-color: #003049;
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.contenido-cine{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-cine img{
+    margin: 30px;
+    height: 150px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contenido-cine h4{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contenido-cine a img:hover{
+    transform: scale(1.1);
+}
+
 /* MEDIAS */
 @media screen and (max-width: 1000px){
     .toggleMenu{
@@ -359,7 +403,7 @@ img{
     }
 
 
-    .navigation{
+    .navigation2{
         justify-content: center;
         flex-direction: column;
         transform: scale(1,0);
@@ -372,7 +416,7 @@ img{
         opacity: 0;
     }
 
-    .navigation.active{
+    .navigation2.active{
         position: fixed;
         top: 0;
         right: 0;
@@ -390,7 +434,7 @@ img{
         z-index: 999;
     }
 
-    .navigation ul{
+    .navigation2 ul{
         flex-direction: column;
         text-align: center;
     }
