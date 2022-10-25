@@ -10,7 +10,6 @@ body{
     margin: 0;
     padding: 0;
     background: linear-gradient(90deg, hsla(216, 100%, 4%, 1) 0%, hsla(256, 41%, 47%, 1) 80%);
-    background-color: #000814;
 }
 
 img{
@@ -326,6 +325,8 @@ img{
     text-align: center;
     transition: color 0.2s linear;
     display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .btn-search:hover{
@@ -355,7 +356,7 @@ img{
     padding-top: 5em;
     text-align: center;
     height: 85vh;
-    background-color: #003049;
+    background-color: #000000;
     display: flex;
     flex-wrap: nowrap;
     border-bottom-left-radius: 150px;
@@ -382,6 +383,28 @@ img{
 
 .contenido-cine a img:hover{
     transform: scale(1.1);
+}
+
+.btn-search2{
+    background: none;
+    font-size: 20px;
+    color: #ffffff;
+    border: 2px solid #73fbd3;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    min-width: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.2s linear;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-search2:hover{
+    color: #000000;
+    background-color: #73fbd3;
+    border-color: #4ab091;
 }
 
 
