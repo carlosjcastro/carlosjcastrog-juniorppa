@@ -2,6 +2,7 @@
 
 *,*::before,*::after{
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 body{
@@ -171,6 +172,7 @@ nav a:hover::before{
 }
 
 .plus{
+    font-size:80px;
     margin: 0;
     padding: 0;
     color: #fb8500;
@@ -356,8 +358,8 @@ img{
     background-color: #003049;
     display: flex;
     flex-wrap: nowrap;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
 }
 
 .contenido-cine{
@@ -380,6 +382,75 @@ img{
 
 .contenido-cine a img:hover{
     transform: scale(1.1);
+}
+
+
+/* FOOTER */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #000814;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-footer{
+    font-weight: bold;
+}
+
+.tucinemaplus2{
+    font-size: 40px;
+    color: #6247aa;
+}
+
+.plus2{
+    font-size:60px;
+    margin: 0;
+    padding: 0;
+    color: #fb8500;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #73fbd3;
+
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #6247aa;
+    font-size: 20px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #fb8500;
+    text-align: center;
 }
 
 /* MEDIAS */
