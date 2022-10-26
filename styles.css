@@ -237,25 +237,6 @@ img{
     border-radius: 50%;
 }
 
-
-.btndark{
-    background: none;
-    font-size: 20px;
-    color: #ffffff;
-    border: 2px solid #73fbd3;
-    text-transform: uppercase;
-    padding: 12px 20px;
-    min-width: 200px;
-    margin: 0px;
-    cursor: pointer;
-    transition: color 0.2s linear;
-}
-
-.btndark:hover{
-    color: #000000;
-    border-color: #4ab091;
-}
-
 .btndark::before{
     content: '';
     position: absolute;
@@ -405,6 +386,69 @@ img{
     color: #000000;
     background-color: #73fbd3;
     border-color: #4ab091;
+}
+
+/* ---------- PROVINCIAS Y CINES ---------- */
+.title-province{
+    color: #fb8500;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.provincias{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40em;
+    background-color: #000814;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+} 
+
+.columna1-prov{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%; 
+    height: 400px;
+    float: left; 
+}
+
+.columna2-prov{
+    align-items: center;
+    text-align: center;
+    width: 30%; 
+    height: 400px;
+    float: left; 
+}
+
+.columna3-prov{
+    align-items: center;
+    text-align: center;
+    width: 30%; 
+    height: 400px;
+    float: left; 
+}
+
+.provincias .btn{
+    text-align: center;
+    justify-content: center;
+    width:140px;
+    padding: 10px;
+    transition: transform 0.4s;
+    color: #000000;
+    border-radius: 0;
+    border: none;
+    background-color: #73fbd3;
+}
+
+.provincias .btn:hover{
+    transform: scale(1.1);
+    background-color: #54c5a3;
 }
 
 
