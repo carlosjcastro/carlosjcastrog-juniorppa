@@ -398,45 +398,64 @@ img{
 }
 
 .provincias{
+    display: block;
     margin-top: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 40em;
+    height: 45em;
+    margin: auto;
     background-color: #000814;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
 } 
 
-.columna1-prov{
-    justify-content: center;
+.provincias .bienvenido{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}   
+.exc{
+    color: #6247aa;
+}
+
+.provincias .elegir-provincia{
+    color: #fb8500;
+    margin-bottom:10vh;
+    padding: 0;
+}
+
+.provincias .columnas-provincias{
     align-items: center;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.columna1-prov{
     width: 30%; 
     height: 400px;
     float: left; 
 }
 
 .columna2-prov{
-    align-items: center;
-    text-align: center;
     width: 30%; 
     height: 400px;
     float: left; 
 }
 
 .columna3-prov{
-    align-items: center;
-    text-align: center;
     width: 30%; 
     height: 400px;
     float: left; 
 }
 
 .provincias .btn{
-    text-align: center;
-    justify-content: center;
+    cursor: pointer;
     width:140px;
     padding: 10px;
     transition: transform 0.4s;
@@ -451,6 +470,21 @@ img{
     background-color: #54c5a3;
 }
 
+.provincias .modal-content{
+    border: none;
+    color: #ffffff;
+    border-radius: 0;
+    background-color: #6247aa;
+}
+
+.provincias .modal-header{
+    text-transform: uppercase;
+}
+
+.provincias .modal-header .btn-close{
+    background-color: #ffffff;
+    color: #ffffff;
+}
 
 /* FOOTER */
 footer{
