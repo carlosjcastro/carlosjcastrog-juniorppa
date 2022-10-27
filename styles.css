@@ -5,6 +5,19 @@
     transition: 0.5s;
 }
 
+:root{
+    --primary-color:#235454;
+    --body-bg:linear-gradient(90deg, hsla(216, 100%, 4%, 1) 0%, hsla(256, 41%, 47%, 1) 80%);
+    --left-section: #6247aa;
+}
+
+.dark{
+    --primary-color:#534545;
+    --body-bg:linear-gradient(90deg, rgb(0, 102, 255) 0%, hsla(256, 41%, 47%, 1) 80%);
+    --left-section:#372861;
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -137,6 +150,11 @@ nav a:hover::before{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+}
+
+.moon-cjcg{
+    width: 40px;
+    cursor: pointer;
 }
 
 .hero>*{
@@ -475,7 +493,6 @@ img{
 }
 
 .provincias .btn:hover{
-
     background-color: #54c5a3;
     border: 2px solid #ffffff;
 }
