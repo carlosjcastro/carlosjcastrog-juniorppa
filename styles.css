@@ -407,8 +407,10 @@ img{
     height: 45em;
     margin: auto;
     background-color: #000814;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 } 
 
 .provincias .bienvenido{
@@ -423,9 +425,15 @@ img{
     color: #6247aa;
 }
 
+.dot{
+    font-size: 40px;
+    color: #d62828;
+}
+
 .provincias .elegir-provincia{
     color: #fb8500;
-    margin-bottom:10vh;
+    font-size: 20px;
+    margin-bottom:8vh;
     padding: 0;
 }
 
@@ -463,11 +471,13 @@ img{
     border-radius: 0;
     border: none;
     background-color: #73fbd3;
+    border: 2px solid transparent;
 }
 
 .provincias .btn:hover{
-    transform: scale(1.1);
+
     background-color: #54c5a3;
+    border: 2px solid #ffffff;
 }
 
 .provincias .modal-content{
