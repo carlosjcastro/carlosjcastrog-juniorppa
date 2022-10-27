@@ -13,23 +13,23 @@
     <script src="/darklight.js"></script>
     <title>TUCINEMA+ | CJCG </title>
 </head>
-<body>
+<body class="bg">
 <!-- MENÚ -->
     <header class="container2 row2">
-        <a href="" class="logo">CJCG</a>
+        <a href="/index.html" class="logo">CJCG</a>
         <div class="toggleMenu" onclick="toggleMenu();"></div>
         <nav class="navigation2 row2">
           <ul class="primary-list row2">
             <li><a href="/index.html">Home</a></li>
+            <li><a href="/cines.html">Cines</a></li>
             <li><a href="/proyecto.html">Project</a></li>
             <li><a href="">Contact</a></li>
           </ul>
           <!-- <ul class="secondary-list row">
             <a href="https://www.linktr.ee/charlescito" target="_blank"><p>Charlescito</p></a>
           </ul> -->
-
-          <img src="/Imagenes/Moon.png" alt="Moon Light" class="moon-cjcg" id="darklight">
         </nav>
+        <img src="/Imagenes/Sun.png" alt="Moon Light" class="moon-cjcg" id="darklight">
       </header>
 
   <!-- HERO -->
@@ -37,7 +37,7 @@
         <div class="content">
           <h1 class="tucinemaplus">TUCINEMA <span class="plus">+</span></h1>
           <h2>TU CINE FAVORITO</h2>
-          <h3>CERCA TUYO<span class="dot">.</span></h2></h3>
+          <h3>CERCA TUYO<span class="dot-1">.</span></h2></h3>
           <span class="carlosjcastrog">By Carlos José Castro Galante | CJCG | Charlescito.</span>
           <p>Inicia buscando el cine aquí </p>
             <a href="#cines" class="btndark btnnormal ">EMPEZAR</a>
@@ -89,6 +89,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 <script>
 
 var darklight = document.getElementById ("darklight");
@@ -96,9 +97,9 @@ var darklight = document.getElementById ("darklight");
 darklight.onclick = function(){
     document.body.classList.toggle("dark");
     if(document.body.classList.contains("dark")){
-        darklight.src = "Imagenes/Sun.png";
-    } else{
         darklight.src = "Imagenes/Moon.png";
+    } else{
+        darklight.src = "Imagenes/Sun.png";
     }
   }
 

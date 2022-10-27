@@ -6,23 +6,42 @@
 }
 
 :root{
-    --primary-color:#235454;
-    --body-bg:linear-gradient(90deg, hsla(216, 100%, 4%, 1) 0%, hsla(256, 41%, 47%, 1) 80%);
-    --left-section: #6247aa;
+    --menu-color:#ffffff;
+    --body-bg:#12122a;
+    --title-w-p:#ffffff;
+    --cinemas-color:#000000;
+    --logo-color:#73fbd3;
+     /* CINES | PROVINCIAS */
+    --provincias-color:#000814;
+    --exc-dot-bienvenida-c:#613dc1;
+    --text-elegir-prov-c:#fb8500;
+
 }
 
 .dark{
-    --primary-color:#534545;
-    --body-bg:linear-gradient(90deg, rgb(0, 102, 255) 0%, hsla(256, 41%, 47%, 1) 80%);
-    --left-section:#372861;
+    --primary-color:#235454;
+    /* --body-bg:linear-gradient(90deg, hsla(216, 100%, 4%, 1) 0%, hsla(256, 41%, 47%, 1) 80%); */
+    --menu-color:#fb8500;
+    --menu-color-h:#000000;
+    --body-bg:#ffffff;
+    --title-w-p:#000000;
+    --logo-color:#d62828;
+    /* CINES | PROVINCIAS */
+    --cinemas-color:#ffffff;
+    --provincias-color:#613dc1;
+    --exc-dot-bienvenida-c:#73fbd3;
+    --text-elegir-prov-c:#ffffff;
 }
-
 
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, hsla(216, 100%, 4%, 1) 0%, hsla(256, 41%, 47%, 1) 80%);
+
+}
+
+.bg{
+    background-color: var(--body-bg);
 }
 
 img{
@@ -85,12 +104,12 @@ header a{
 } */
 
 .primary-list a{
-    color: #ffffff;
+    color: var(--menu-color);
 }
 
-.primary-list a:hover{
-    color: #fb8500;
-}
+/* .primary-list a:hover{
+    color: var(--menu-color-h);
+} */
 
 .primary-list a::before{
     position: absolute;
@@ -140,7 +159,7 @@ nav a:hover::before{
 
 .secondary-list p{
     text-decoration: none;
-    color: #80ffdb;
+    color: var(--logo-color);
     font-weight: bold;
     font-size: 25px;
 }
@@ -152,7 +171,10 @@ nav a:hover::before{
     padding: 20px;
 }
 
+/* DARK MODE */
 .moon-cjcg{
+    border-radius: 50%;
+    background-color: #000000;
     width: 40px;
     cursor: pointer;
 }
@@ -169,11 +191,11 @@ nav a:hover::before{
 .container2 .logo{
     font-weight: bold;
     font-size: 40px;
-    color: #80ffdb;
+    color:var(--logo-color);
 }
 
 .content h2, .content h3{
-    color: #ffffff;
+    color: var(--title-w-p);
 }
 
 .content h1, .content h2, .content h3{
@@ -185,7 +207,7 @@ nav a:hover::before{
 
 .tucinemaplus{
     font-size: 90px;
-    color: #6247aa;
+    color: #613dc1;
 }
 
 .plus{
@@ -193,6 +215,10 @@ nav a:hover::before{
     margin: 0;
     padding: 0;
     color: #fb8500;
+}
+
+.dot-1{
+    color: #d62828;
 }
 
 .carlosjcastrog{
@@ -208,7 +234,7 @@ nav a:hover::before{
 
 .content p{
     margin-bottom: 30px;
-    color: #ffffff;
+    color: var(--title-w-p);
 }
 
 .content a{
@@ -287,7 +313,7 @@ img{
 }
 
 .left-section{
-    background: #6247aa;
+    background: #613dc1;
     height: 100vh;
     width: 50%;
     text-align: center;
@@ -351,11 +377,10 @@ img{
 
 /* CARDS */
 .cards{
-
     padding-top: 5em;
     text-align: center;
     height: 85vh;
-    background-color: #000000;
+    background-color: var(--cinemas-color);
     display: flex;
     flex-wrap: nowrap;
     border-bottom-left-radius: 150px;
@@ -424,7 +449,7 @@ img{
     width: 100%;
     height: 45em;
     margin: auto;
-    background-color: #000814;
+    background-color: var(--provincias-color);
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
@@ -440,16 +465,16 @@ img{
     padding: 0;
 }   
 .exc{
-    color: #6247aa;
+    color: var(--exc-dot-bienvenida-c);
 }
 
 .dot{
     font-size: 40px;
-    color: #d62828;
+    color: var(--exc-dot-bienvenida-c);
 }
 
 .provincias .elegir-provincia{
-    color: #fb8500;
+    color: var(--text-elegir-prov-c);
     font-size: 20px;
     margin-bottom:8vh;
     padding: 0;

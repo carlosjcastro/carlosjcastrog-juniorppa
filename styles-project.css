@@ -1,11 +1,22 @@
 
+:root{
+    --bg-project:#000814;
+    --course-title-text:#ffffff;
+}
+
+.dark{
+    --bg-project:#ffffff;
+    --course-title-text:#000000;
+}
+
+
 .project{
     display: flex;
     text-align: center;
     justify-content: center;
     text-align: center;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-project);
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     
@@ -14,12 +25,22 @@
 .info-project2022 h2{
     font-weight: bold;
     padding-top: 180px;
+    color: var(--course-title-text);
 }
 
 .info-project2022 img{
-    padding: 30px;
+    padding: 20px;
+    margin: 0;
     height: 150px;
     width: auto;
+}
+
+.info-project2022 img:hover{
+    transform: scale(1.2);
+}
+
+.info-project2022 p{
+    color: var(--course-title-text);
 }
 
 .name-carlosjcastrog{
