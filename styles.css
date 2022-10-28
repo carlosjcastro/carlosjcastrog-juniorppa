@@ -21,10 +21,10 @@
 .dark{
     --primary-color:#235454;
     /* --body-bg:linear-gradient(90deg, hsla(216, 100%, 4%, 1) 0%, hsla(256, 41%, 47%, 1) 80%); */
-    --menu-color:#fb8500;
+    --menu-color:#000000;
     --menu-color-h:#000000;
-    --body-bg:#ffffff;
-    --title-w-p:#000000;
+    --body-bg:#cae9ff;
+    --title-w-p:#0a0909;
     --logo-color:#d62828;
     /* CINES | PROVINCIAS */
     --cinemas-color:#ffffff;
@@ -37,7 +37,6 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 .bg{
@@ -225,32 +224,17 @@ nav a:hover::before{
     color: #d62828;
 }
 
-.content p, .content a{
-    font-weight: 500;
-    font-size: 24px;
-    color: #000000;
-    padding-top: 1em;
-}
 
 .content p{
     margin-bottom: 30px;
     color: var(--title-w-p);
 }
 
-.content a{
-    align-items: center;
-    gap: 1em;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #73fbd3;
-    text-decoration: none;
-}
 
-.content a:hover{
-    background-color: #54c5a3;
+/* .content a:hover{
+    background-color: var(--start-btn-hov-c);
     transform: translateY(0.5,0.5);
-
-}
+} */
 
 .content i{
     font-size: 2em;
@@ -259,10 +243,6 @@ nav a:hover::before{
     -moz-transition: 0.3s ease-in-out;
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-}
-
-.content a:hover{
-    color: #ffffff;
 }
 
 img{
@@ -281,23 +261,10 @@ img{
     border-radius: 50%;
 }
 
-.btndark::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #73fbd3;
-    z-index:-1;
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+.btndark{
+    color: var(--start-btn-c);
 }
 
-.btnnormal::before{
-    transform: scaleX(0);
-}
 
 /* SECCIÓN INFO */
 .info{
@@ -360,6 +327,30 @@ img{
     border-color: #4ab091;
 }
 
+.btn-search3{
+    background: none;
+    font-size: 20px;
+    color: var(--title-w-p);
+    border: 2px solid #73fbd3;
+    text-transform: uppercase;
+    padding: 20px 60px;
+    min-width: 200px;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.2s linear;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-search3:hover{
+    color: #000000;
+    background-color: #73fbd3;
+    border-color: #4ab091;
+}
+
+
+
 .right-section{
     width: 50%;
     height: 100vh;
@@ -375,61 +366,6 @@ img{
 }
 
 
-/* CARDS */
-.cards{
-    padding-top: 5em;
-    text-align: center;
-    height: 85vh;
-    background-color: var(--cinemas-color);
-    display: flex;
-    flex-wrap: nowrap;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
-}
-
-.contenido-cine{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenido-cine img{
-    margin: 30px;
-    height: 150px;
-    transition: transform 0.2s ease-in-out;
-}
-
-.contenido-cine h4{
-    font-size: 40px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.contenido-cine a img:hover{
-    transform: scale(1.1);
-}
-
-.btn-search2{
-    background: none;
-    font-size: 20px;
-    color: #ffffff;
-    border: 2px solid #73fbd3;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    min-width: 50px;
-    cursor: pointer;
-    text-align: center;
-    transition: color 0.2s linear;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-search2:hover{
-    color: #000000;
-    background-color: #73fbd3;
-    border-color: #4ab091;
-}
 
 /* ---------- PROVINCIAS Y CINES ---------- */
 .title-province{
