@@ -1,0 +1,16 @@
+.curved-wave{
+    height: 30rem;
+    background-color: blueviolet;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.curved-wave h1{
+    color: beige;
+    font-size: 6rem;
+    margin-top: 0;
+}
+
+.curved-wave svg{
+    display: block;
+}

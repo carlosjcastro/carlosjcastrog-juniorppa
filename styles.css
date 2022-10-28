@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-*,*::before,*::after{
-    box-sizing: border-box;
-    transition: 0.5s;
+*{
+    transition: all 0.2s;
 }
 
 :root{
@@ -81,7 +80,7 @@ header ul{
 header a{
     position: relative;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     color: #ffffff;
     transition: 0.2s ease-in-out;
     text-decoration: none;

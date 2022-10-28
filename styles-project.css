@@ -1,25 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
 :root{
-    --bg-project:#000814;
+    --bg-project:#57cc99;
     --course-title-text:#ffffff;
+    --link-text-carlosjcastrog:#000000;
+    --wave-c:#337f5e;
 }
 
 .dark{
     --bg-project:#ffffff;
     --course-title-text:#000000;
+    --link-text-carlosjcastrog:#613dc1;
+    --wave-c:#613dc1;
 }
 
-
+/* 
 .project{
     display: flex;
     text-align: center;
     justify-content: center;
-    text-align: center;
-    height: 100vh;
-    background-color: var(--bg-project);
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    
+    text-align: center;    
 }
 
 .info-project2022 h2{
@@ -52,4 +56,51 @@
 .name-carlosjcastrog:hover{
     color: #372960;
     text-decoration: underline;
+} */
+
+.curved-project{
+    background-color: var(--bg-project);
+    color: var(--course-title-text);
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.curved-project h2{
+    font-size: 30px;
+    margin-top: 20px;
+    padding-top: 80px;
+    font-weight: bold;
+}
+
+.curved-project p{
+    font-size: 1rem;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.curved-project a{
+    color: var(--link-text-carlosjcastrog);
+}
+
+.curved-project svg:path fill{
+    color: #613dc1;
+}
+
+path{
+    fill: var(--wave-c);
+}
+
+.curved-project svg{
+    display: block;
+}
+
+.curved-project img{
+    margin-left: 10px;
+    align-items: center;
+    height: 140px;
+}
+
+.curved-project img:hover{
+    transform: scale(1.1);
 }
