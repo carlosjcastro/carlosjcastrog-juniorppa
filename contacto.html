@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="/styles-contact.css">
+    <link rel="stylesheet" href="styles-contact.css">
     <title>Contacto</title>
   </head>
   <body class="bg">
@@ -16,9 +16,9 @@
       <nav class="navigation2 row2">
         <ul class="primary-list row2">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/cines.html">Cines</a></li>
+          <li><a href="/cines.html">Cinemas</a></li>
           <li><a href="/proyecto.html">Project</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="/contacto.html">Contact</a></li>
         </ul>
         <!-- <ul class="secondary-list row">
             <a href="https://www.linktr.ee/charlescito" target="_blank"><p>Charlescito</p></a>
@@ -31,12 +31,104 @@
         id="darklight"
       />
     </header>
-    <!-- CONTACT -->
-   
-    <div class="curved-wave">
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>92 Cherry Drive Uniondale, NY 11553</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>lorem@ipsum.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="curved-wave">
         <h1>Hola</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae laborum ut eaque fugiat possimus expedita ea ipsa qui quia unde nam amet repellat nesciunt, esse totam animi. Voluptatem, nihil.</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L26.7,165.3C53.3,171,107,181,160,160C213.3,139,267,85,320,101.3C373.3,117,427,203,480,213.3C533.3,224,587,160,640,144C693.3,128,747,160,800,181.3C853.3,203,907,213,960,197.3C1013.3,181,1067,139,1120,106.7C1173.3,75,1227,53,1280,69.3C1333.3,85,1387,139,1413,165.3L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
-    </div>
+    </div> -->
   </body>
+
+  <script>
+    var darklight = document.getElementById("darklight");
+    darklight.onclick = function () {
+      document.body.classList.toggle("dark");
+      if (document.body.classList.contains("dark")) {
+        darklight.src = "Imagenes/Moon.png";
+      } else {
+        darklight.src = "Imagenes/Sun.png";
+      }
+    };
+  </script>
 </html>

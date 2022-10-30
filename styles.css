@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     transition: all 0.2s;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 :root{
@@ -10,6 +15,7 @@
     --title-w-p:#ffffff;
     --cinemas-color:#000000;
     --logo-color:#73fbd3;
+    --left-section-c:#491a92;
      /* CINES | PROVINCIAS */
     --provincias-color:#000814;
     --exc-dot-bienvenida-c:#613dc1;
@@ -25,6 +31,7 @@
     --body-bg:#cae9ff;
     --title-w-p:#0a0909;
     --logo-color:#d62828;
+    --left-section-c:#5736b0;
     /* CINES | PROVINCIAS */
     --cinemas-color:#ffffff;
     --provincias-color:#613dc1;
@@ -279,7 +286,7 @@ img{
 }
 
 .left-section{
-    background: #613dc1;
+    background: var(--left-section-c);
     height: 100vh;
     width: 50%;
     text-align: center;
