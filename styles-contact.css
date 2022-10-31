@@ -1,3 +1,34 @@
+:root{
+  --title-color:#ffffff;
+  --place-holder-c:#000000;
+  --bg-color-form:#613dc1;
+  --btn-color-c:#ffffff;
+  --wave-contact-c:#73fbd3;
+  --bg-field-c:#ffffff;
+}
+
+.dark{
+  --bg-color-form:#ffffff;
+  --btn-color-c:#000000;
+  --place-holder-c:#ffffff;
+  --title-color:#000000;
+  --wave-contact-c:#613dc1;
+  --bg-field-c:#f8e8e8;
+}
+
+.contact-to-title{
+  height: 20vh;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.contact-to-title .contact-content{
+  background: #ffffff;
+  color: var(--title-color);
+  font-size: 60px;
+  text-align: center;
+}
 
 .container{
 	position: relative;
@@ -16,34 +47,43 @@
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("img/bg.jpg") no-repeat center;
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
 }
+
 .contact-box{
+ border-radius: 50px;
 	max-width: 850px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #fff;
+	background-color: var(--bg-color-form);
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
 
+.left-section-form{
+  background: url("/Imagenes/Cine_3.png") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
 
 .right{
 	padding: 25px 40px;
 }
 
-h2{
+.title-contacto{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
+  color: var(--title-color);
 }
 
-h2:after{
+.title-contacto::after{
 	content: '';
     position: absolute;
     left: 50%;
@@ -67,32 +107,42 @@ h2:after{
 }
 
 .field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--bg-field-c);
+}
+
+input .placeholder{
+  color: var(--place-holder-c);
 }
 
 textarea{
 	min-height: 150px;
+  resize: none;
 }
 
-.btn{
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
-	color: #fff;
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
+.btn-search3{
+  background: none;
+  font-size: 20px;
+  color: var(--btn-color-c);
+  border: 2px solid #73fbd3;
+  text-transform: uppercase;
+  padding: 20px 60px;
+  min-width: 200px;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s linear;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.btn:hover{
-    background-color: #27ae60;
+.form-wave svg{
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
-    background-color: #fff;
+path{
+  fill: var(--wave-contact-c);
 }
 
 @media screen and (max-width: 880px){
