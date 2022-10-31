@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="styles-contact.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-contact.css" />
     <title>Contacto</title>
   </head>
   <body class="bg">
@@ -31,88 +31,39 @@
         id="darklight"
       />
     </header>
+    <form action="mailto:carlosjosecastro.p@gmail.com" method="get">
     <div class="container">
-      <span class="big-circle"></span>
-      <img src="img/shape.png" class="square" alt="" />
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
-          </p>
-
-          <div class="info">
-            <div class="information">
-              <img src="img/location.png" class="icon" alt="" />
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
-            </div>
-            <div class="information">
-              <img src="img/email.png" class="icon" alt="" />
-              <p>lorem@ipsum.com</p>
-            </div>
-            <div class="information">
-              <img src="img/phone.png" class="icon" alt="" />
-              <p>123-456-789</p>
-            </div>
-          </div>
-
-          <div class="social-media">
-            <p>Connect with us :</p>
-            <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
+      <div class="contact-box">
+        <div class="left">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d19232773.033387687!2d-63.12319393003879!3d-40.261177448062405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scine%20argentina!5e0!3m2!1ses-419!2sar!4v1666641804069!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-
-        <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
-
-          <form action="index.html" autocomplete="off">
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Username</label>
-              <span>Username</span>
-            </div>
-            <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
-              <span>Email</span>
-            </div>
-            <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Phone</label>
-              <span>Phone</span>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
-              <span>Message</span>
-            </div>
-            <input type="submit" value="Send" class="btn" />
-          </form>
+        <div class="right">
+          <h2 class="title-contacto">¡Envía tu consulta!</h2>
+          <inputntype="text"mclass="field"mplaceholder="Nombre y Apellido" required/>
+          <input type="email" class="field" placeholder="Email" required />
+          <input type="text" class="field" placeholder="Provincia" required />
+          <label for="cars">Elegir Provincia:</label>
+          <select name="cars" id="cars" form="carform">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <textarea placeholder="Mensaje" class="field" required></textarea>
+          <button class="btn-search">Enviar</button>
         </div>
       </div>
     </div>
-
-
-
-
-
-
+</form>
     <!-- <div class="curved-wave">
         <h1>Hola</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae laborum ut eaque fugiat possimus expedita ea ipsa qui quia unde nam amet repellat nesciunt, esse totam animi. Voluptatem, nihil.</p>
