@@ -455,6 +455,7 @@ img{
     text-decoration: none;
     font-size: 50px;
     color: #613dc1;
+    font-weight: bold;
 }
 
 .tucinemaplus-footer a{
@@ -581,6 +582,10 @@ img{
 
 .footer-general .copy-carlosjcastrog small{
     font-size: 15px;
+}
+
+.heart-text{
+    color: #d62828;
 }
 
 @media screen and (max-width:800px){
