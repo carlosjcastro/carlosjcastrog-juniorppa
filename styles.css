@@ -20,7 +20,13 @@
     --provincias-color:#000814;
     --exc-dot-bienvenida-c:#613dc1;
     --text-elegir-prov-c:#fb8500;
-
+    /* FOOTER */
+    --bg-footer-c:#000814;
+    --title-contact-follow-c:#ffffff;
+    --social-media-hover-bg:#eaeaea;
+    --social-media-hover-bg-h:#613dc1;
+    --social-contact-follow-color:#613dc1;
+    --social-contact-follow-color-h:#eaeaea;
 }
 
 .dark{
@@ -37,6 +43,13 @@
     --provincias-color:#613dc1;
     --exc-dot-bienvenida-c:#73fbd3;
     --text-elegir-prov-c:#ffffff;
+     /* FOOTER */
+     --bg-footer-c:#ffffff;
+     --title-contact-follow-c:#000000;
+     --social-media-hover-bg:#613dc1;
+     --social-media-hover-bg-h:#eaeaea;
+     --social-contact-follow-color:#eaeaea;
+     --social-contact-follow-color-h:#613dc1;
 }
 
 body{
@@ -479,71 +492,133 @@ img{
 }
 
 /* FOOTER */
-footer{
-    margin-top: 50px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 8%;
-    background-color: #000814;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.tucinemaplus-footer{
+    text-decoration: none;
+    font-size: 50px;
+    color: #613dc1;
 }
 
-.logo-footer{
+.tucinemaplus-footer a{
+    text-decoration: none;
+}
+
+.logo-footer a{
     font-weight: bold;
+    text-decoration: none;
 }
 
-.tucinemaplus2{
-    font-size: 40px;
-    color: #6247aa;
-}
-
-.plus2{
+.plus-footer{
     font-size:60px;
     margin: 0;
     padding: 0;
     color: #fb8500;
 }
 
-.social-icons-container, .footer-menu-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-}
-
-.social-icon{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid #73fbd3;
-
-}
-
-.footer-menu-container{
-    list-style-type: none;
-    color: #6247aa;
+.info-email h2{
+    color: var(--title-contact-follow-c);
+    font-weight: bold;
+    margin-bottom: 25px;
     font-size: 20px;
 }
 
-.menu-item{
-    margin: 1rem 1.5rem;
-    cursor: pointer;
-    opacity: 0.6;
+.email-tucinemaplus{
+    color: #ffffff;
 }
 
-.menu-item:hover{
-    opacity: 1;
+.info-email .email-tucinemaplus, .info-email i{
+    color: #73fbd3;
 }
 
-.copyright{
-    color: #fb8500;
+.info-email i{
+    margin-right: 10px;
+}
+
+.info-email p{
+    color: #d62828;
+}
+
+.social-medias-contact h2{
+    color: var(--title-contact-follow-c);
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.argentina{
+    height: 25px;
+}
+
+  @media screen and (max-width:960px) {
+    .footer-container{
+      max-width: 600px;
+    }
+    .right-col{
+      width: 100%;
+      margin-bottom: 60px;
+    }
+  
+    .left-col{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  .footer-general{
+    width: 100%;
+    background-color: var(--bg-footer-c);
+}
+.footer-general .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.footer-general .grupo-1 .info-email figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-general .grupo-1 .info-email figure img{
+    width: 250px;
+}
+.footer-general .grupo-1 .social-carlosjcastrog a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--social-contact-follow-color);
+    margin-right: 10px;
+    border-radius: 50px;
+    background-color: var(--social-media-hover-bg);
     text-align: center;
+    transition: all 300ms ease;
+}
+.footer-general .grupo-1 .social-carlosjcastrog a:hover{
+    transform: translateY(-10px);
+    background-color:var(--social-media-hover-bg-h);
+    color: var(--social-contact-follow-color-h);
+}
+.footer-general .copy-carlosjcastrog{
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.footer-general .copy-carlosjcastrog small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
 
 /* MEDIAS */
@@ -630,3 +705,11 @@ footer{
         flex: auto;
     }
 }
+
+@media screen and (max-width:700px){
+    .btn{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+      }
+  }
