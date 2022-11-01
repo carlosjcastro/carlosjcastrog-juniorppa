@@ -22,6 +22,7 @@
     --text-elegir-prov-c:#fb8500;
     /* FOOTER */
     --bg-footer-c:#000814;
+    --email-c:#73fbd3;
     --title-contact-follow-c:#ffffff;
     --social-media-hover-bg:#eaeaea;
     --social-media-hover-bg-h:#613dc1;
@@ -45,6 +46,7 @@
     --text-elegir-prov-c:#ffffff;
      /* FOOTER */
      --bg-footer-c:#ffffff;
+     --email-c:#613dc1;
      --title-contact-follow-c:#000000;
      --social-media-hover-bg:#613dc1;
      --social-media-hover-bg-h:#eaeaea;
@@ -522,11 +524,11 @@ img{
 }
 
 .email-tucinemaplus{
-    color: #ffffff;
+    color: var(--email-c);
 }
 
 .info-email .email-tucinemaplus, .info-email i{
-    color: #73fbd3;
+    color: var(--email-c);
 }
 
 .info-email i{
@@ -546,6 +548,10 @@ img{
 
 .argentina{
     height: 25px;
+}
+
+.argentina:hover{
+    transform: translateY(-5px);
 }
 
   @media screen and (max-width:960px) {
@@ -607,7 +613,7 @@ img{
 .footer-general .copy-carlosjcastrog{
     padding: 15px 10px;
     text-align: center;
-    color: #fff;
+    color: var(--title-contact-follow-c);
 }
 .footer-general .copy-carlosjcastrog small{
     font-size: 15px;
