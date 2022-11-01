@@ -6,7 +6,6 @@
     box-sizing: border-box;
     transition: all 0.2s;
     font-family: 'Poppins', sans-serif;
-
 }
 
 :root{
@@ -160,6 +159,7 @@ nav a:hover::before{
     background-color: #000000;
     width: 40px;
     cursor: pointer;
+    animation-direction: normal;
 }
 
 .hero>*{
@@ -354,7 +354,6 @@ img{
 
 .provincias{
     display: block;
-    margin-top: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -366,6 +365,8 @@ img{
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    margin-bottom: 50px; backdrop-filter: blur(2px);
+
 } 
 
 .provincias .bienvenido{
@@ -378,18 +379,20 @@ img{
 }   
 .exc{
     color: var(--exc-dot-bienvenida-c);
+    margin: 0;
 }
 
 .dot{
     font-size: 40px;
     color: var(--exc-dot-bienvenida-c);
+    margin: 0;
 }
 
 .provincias .elegir-provincia{
     color: var(--text-elegir-prov-c);
-    font-size: 20px;
     margin-bottom:8vh;
     padding: 0;
+    font-size: 15px;
 }
 
 .provincias .columnas-provincias{
@@ -512,29 +515,14 @@ img{
     transform: translateY(-5px);
 }
 
-  @media screen and (max-width:960px) {
-    .footer-container{
-      max-width: 600px;
-    }
-    .right-col{
-      width: 100%;
-      margin-bottom: 60px;
-    }
-  
-    .left-col{
-      width: 100%;
-      text-align: center;
-    }
-  }
-  
-  .footer-general{
+.footer-general{
     width: 100%;
     background-color: var(--bg-footer-c);
 }
 
 .footer-general .logo-content{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
