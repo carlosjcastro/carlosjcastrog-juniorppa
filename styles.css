@@ -613,7 +613,7 @@ img{
     font-size: 15px;
 }
 @media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+    .footer-general .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
