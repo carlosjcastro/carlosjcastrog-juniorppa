@@ -45,7 +45,7 @@
     --exc-dot-bienvenida-c:#73fbd3;
     --text-elegir-prov-c:#ffffff;
      /* FOOTER */
-     --bg-footer-c:#ffffff;
+     --bg-footer-c:#b5d0e3;
      --email-c:#613dc1;
      --title-contact-follow-c:#000000;
      --social-media-hover-bg:#613dc1;
@@ -55,7 +55,6 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -117,19 +116,9 @@ header a{
     margin: -10px auto;
 }
 
-/* .sayhi{
-    border-radius: 35px;
-    background-color: #000000;
-    padding: 10px;
-} */
-
 .primary-list a{
     color: var(--menu-color);
 }
-
-/* .primary-list a:hover{
-    color: var(--menu-color-h);
-} */
 
 .primary-list a::before{
     position: absolute;
@@ -137,7 +126,7 @@ header a{
     content: "";
     width: 100%;
     height: 100%;
-    background-image: url(arrow.png);
+    background-image: url(/Imagenes/arrow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -150,38 +139,12 @@ header a{
 }
 
 nav a:hover::before{
-    color: #d62828;
-    text-decoration: none;
     text-decoration: none;
     transform: scale(1,1) rotate(0);
     -webkit-transform: scale(1,1) rotate(0);
     -moz-transform: scale(1,1) rotate(0);
     -ms-transform: scale(1,1) rotate(0);
     -o-transform: scale(1,1) rotate(0);
-}
-
-.secondary-list li:nth-of-type(2){
-    background-color: aqua;
-    padding: 0.3em 1em;
-}
-
-.secondary-list li:nth-of-type(2) a{
-    color: aquamarine;
-}
-
-.secondary-list{
-    text-decoration: none;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.secondary-list p{
-    text-decoration: none;
-    color: var(--logo-color);
-    font-weight: bold;
-    font-size: 25px;
 }
 
 /* HEADER / HERO */
@@ -251,12 +214,6 @@ nav a:hover::before{
     color: var(--title-w-p);
 }
 
-
-/* .content a:hover{
-    background-color: var(--start-btn-hov-c);
-    transform: translateY(0.5,0.5);
-} */
-
 .content i{
     font-size: 2em;
     transition: 0.3s ease-in-out;
@@ -292,8 +249,10 @@ img{
     height: 40em;
     background-color: #54c5a3;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
-
 .info h5{
     text-align: center;
     margin: 0;
@@ -369,8 +328,6 @@ img{
     background-color: #73fbd3;
     border-color: #4ab091;
 }
-
-
 
 .right-section{
     width: 50%;
@@ -573,7 +530,8 @@ img{
     width: 100%;
     background-color: var(--bg-footer-c);
 }
-.footer-general .grupo-1{
+
+.footer-general .logo-content{
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -582,17 +540,20 @@ img{
     grid-gap:50px;
     padding: 45px 0px;
 }
-.footer-general .grupo-1 .info-email figure{
+
+.footer-general .logo-content .info-email figure{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-general .grupo-1 .info-email figure img{
+
+.footer-general .logo-content .info-email figure img{
     width: 250px;
 }
-.footer-general .grupo-1 .social-carlosjcastrog a{
+
+.footer-general .logo-content .social-carlosjcastrog a{
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -605,21 +566,25 @@ img{
     text-align: center;
     transition: all 300ms ease;
 }
-.footer-general .grupo-1 .social-carlosjcastrog a:hover{
+
+.footer-general .logo-content .social-carlosjcastrog a:hover{
     transform: translateY(-10px);
     background-color:var(--social-media-hover-bg-h);
     color: var(--social-contact-follow-color-h);
 }
+
 .footer-general .copy-carlosjcastrog{
     padding: 15px 10px;
     text-align: center;
     color: var(--title-contact-follow-c);
 }
+
 .footer-general .copy-carlosjcastrog small{
     font-size: 15px;
 }
+
 @media screen and (max-width:800px){
-    .footer-general .grupo-1{
+    .footer-general .logo-content{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
@@ -631,7 +596,7 @@ img{
 @media screen and (max-width: 1000px){
     .toggleMenu{
         position: absolute;
-        background-image: url(menu.png);
+        background-image: url(/Imagenes/menu.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 50px;
@@ -643,8 +608,8 @@ img{
 
     .toggleMenu.active{
         position: fixed;
-         background-image: url(/menucerrado.png);
-         background-size: 60px;
+        background-image: url(Imagenes/menucerrado.png);
+        background-size: 60px;
     }
 
 
