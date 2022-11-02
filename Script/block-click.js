@@ -8,4 +8,5 @@ window.onload = function() {
 
 body.addEventListener('click', () => {
   alert('La función ha sido bloqueada.')
+  console.log("Función bloqueada.")
 });
