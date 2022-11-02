@@ -265,43 +265,106 @@ img{
 
 
 /* SECCIÓN INFO */
-.info{
-    height: 40em;
-    background-color: #54c5a3;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-.info h5{
-    text-align: center;
-    margin: 0;
-    font-size: 40px;
+.section{
+	width: 100%;
+	min-height: 120vh;
+	background-color: #0a2239;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
 }
 
-.left-section{
-    background: var(--left-section-c);
-    height: 100vh;
-    width: 50%;
-    text-align: center;
+.title-image{
+    width: 800px;
 }
 
-.left-section p{
-    color: #ffffff;
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding: 0;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.map-iframe iframe{
+	width: 100%;
+	height: auto;
+    margin-top: 50px;
+    border: 2px solid #ffffff;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
 }
 
-.left-section h5{
-    color: #ffffff;
-    padding-top: 30px;
-    width: 50%;
-    margin: 150px auto;
-    margin-bottom: 10px;
-}
-
-.left-section span{
-    font-weight: bold;
-    color:#73fbd3;
-    text-decoration: 6px underline;
 }
 
 .btn-search{
