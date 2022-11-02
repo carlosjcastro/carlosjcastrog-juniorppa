@@ -614,8 +614,7 @@ img{
         background-size: 50px;
         width: 60px;
         height: 60px;
-        padding: 2em;
-        z-index: 1000;
+        z-index: 999;
     }
 
     .toggleMenu.active{
