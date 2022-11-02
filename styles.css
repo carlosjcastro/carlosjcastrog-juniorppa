@@ -9,7 +9,9 @@
 }
 
 :root{
+    --scroll-bar:#73fbd3;
     --menu-color:#ffffff;
+    --menu-hover-color:#73fbd3;
     --body-bg:#12122a;
     --title-w-p:#ffffff;
     --cinemas-color:#000000;
@@ -30,10 +32,10 @@
 }
 
 .dark{
-    --primary-color:#235454;
+    --scroll-bar:#d62828;
     /* --body-bg:linear-gradient(90deg, hsla(216, 100%, 4%, 1) 0%, hsla(256, 41%, 47%, 1) 80%); */
     --menu-color:#000000;
-    --menu-color-h:#000000;
+    --menu-hover-color:#613dc1;
     --body-bg:#cae9ff;
     --title-w-p:#0a0909;
     --logo-color:#613dc1;
@@ -52,6 +54,20 @@
      --social-contact-follow-color:#eaeaea;
      --social-contact-follow-color-h:#613dc1;
 }
+
+/* SCROLL BAR PARA TUCINEMA+ */
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    border-radius: 50%;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--scroll-bar);
+  }
 
 body{
     margin: 0;
@@ -117,6 +133,10 @@ header a{
 
 .primary-list a{
     color: var(--menu-color);
+}
+
+.primary-list a:hover{
+    color: var(--menu-hover-color);
 }
 
 .primary-list a::before{
@@ -365,8 +385,7 @@ img{
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
-    margin-bottom: 50px; backdrop-filter: blur(2px);
-
+    margin-bottom: 50px;
 } 
 
 .provincias .bienvenido{

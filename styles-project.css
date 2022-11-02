@@ -18,46 +18,20 @@
     --wave-c:#613dc1;
 }
 
-/* 
-.project{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-align: center;    
+/* Icons */
+.tools-icons{
+    font-weight: 700;
 }
 
-.info-project2022 h2{
-    font-weight: bold;
-    padding-top: 180px;
-    color: var(--course-title-text);
+.used-icons-design{
+    height: 70px;
 }
 
-.info-project2022 img{
-    padding: 20px;
-    margin: 0;
-    height: 150px;
-    width: auto;
+.curved-project .used-icons-design img{
+    height: 50px;
 }
 
-.info-project2022 img:hover{
-    transform: scale(1.2);
-}
-
-.info-project2022 p{
-    color: var(--course-title-text);
-}
-
-.name-carlosjcastrog{
-    
-    color: #6247aa;
-    text-decoration: none;
-}
-
-.name-carlosjcastrog:hover{
-    color: #372960;
-    text-decoration: underline;
-} */
-
+/* WAVE */
 .curved-project{
     background-color: var(--bg-project);
     color: var(--course-title-text);
