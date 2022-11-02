@@ -607,7 +607,7 @@ img{
 /* MEDIAS */
 @media screen and (max-width: 1000px){
     .toggleMenu{
-        position: absolute;
+        position: relative;
         background-image: url(/Imagenes/menu.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -626,6 +626,7 @@ img{
 
 
     .navigation2{
+        position: relative;
         justify-content: center;
         flex-direction: column;
         transform: scale(1,0);
@@ -653,19 +654,14 @@ img{
         max-height: 100%;
         opacity: 1;
         background-color: #6247aa;
-        z-index: 999;
+        z-index: 900;
     }
 
     .navigation2 ul{
+        position: fixed;
+        justify-content: center;
         flex-direction: column;
         text-align: center;
-    }
-
-    .secondary-list{
-        margin-top: 2.5em;
-        justify-content: center;
-        text-align: center;
-        padding: 0;
         align-items: center;
     }
 
