@@ -1,3 +1,4 @@
+// Diseñado y Desarrollado por: CASTRO GALANTE, CARLOS JOSÉ | @carlosjcastrog
 const body = document.getElementById('body');
 
 window.onload = function() {

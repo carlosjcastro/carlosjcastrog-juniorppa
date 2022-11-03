@@ -42,7 +42,6 @@
 	padding: 20px 100px;
 }
 
-
 .contact-box{
  border-radius: 50px;
 	max-width: 850px;
@@ -56,7 +55,7 @@
 }
 
 .left-section-form{
-  background: url("/Imagenes/Cine_3.png") no-repeat center;
+  background: url("/Imagenes/Otros/Cine_3.png") no-repeat center;
   background-position: center;
   background-repeat: no-repeat;
 	background-size: cover;
@@ -124,6 +123,7 @@ path{
   fill: var(--wave-contact-c);
 }
 
+/* ---------- MEDIAS ---------- */
 @media screen and (max-width: 880px){
 	.contact-box{
 		grid-template-columns: 1fr;

@@ -96,10 +96,6 @@ ul {
   list-style: none;
 }
 
-:is(h1, p) {
-  margin: 0;
-}
-
 .container2 {
   max-width: 90%;
   margin: 0 auto;
@@ -109,7 +105,7 @@ ul {
   display: flex;
 }
 
-/* HEADER */
+/* HEADER y MENÚ */
 header {
   justify-content: space-between;
   align-items: center;
@@ -152,7 +148,7 @@ header a {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url(/Imagenes/arrow.png);
+  background-image: url(/Imagenes/Menu/arrow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -272,7 +268,7 @@ img {
   color: var(--start-btn-c);
 }
 
-/* SECCIÓN INFO */
+/* SECCIÓN INFO DE CINES INDEX */
 .section-cines {
   width: 100%;
   min-height: 120vh;
@@ -418,7 +414,7 @@ img {
   width: 100%;
 }
 
-/* ---------- PROVINCIAS Y CINES ---------- */
+/* ---------- PÁGINA: PROVINCIAS Y CINES ---------- */
 .title-province {
   color: #fb8500;
   font-size: 40px;
@@ -651,6 +647,7 @@ img {
   color: #d62828;
 }
 
+/* ---------- MEDIAS ---------- */
 @media screen and (max-width: 800px) {
   .footer-general .logo-content {
     width: 90%;
@@ -660,11 +657,10 @@ img {
   }
 }
 
-/* MEDIAS */
 @media screen and (max-width: 1000px) {
   .toggleMenu {
     position: relative;
-    background-image: url(/Imagenes/menu.png);
+    background-image: url(/Imagenes/Menu/menu.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50px;
@@ -675,7 +671,7 @@ img {
 
   .toggleMenu.active {
     position: fixed;
-    background-image: url(Imagenes/menucerrado.png);
+    background-image: url(Imagenes/Menu/menucerrado.png);
     background-size: 60px;
   }
 
